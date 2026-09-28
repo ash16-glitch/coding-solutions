@@ -35,22 +35,22 @@ Output: 2
 ## Solution
 
 **Language:** Python  
-**Runtime:** 45 ms (beats 11.64%)  
-**Memory:** 13.7 MB (beats 43.75%)  
-**Submitted:** 2026-09-28T16:43:45.006Z  
+**Runtime:** 36 ms (beats 36.08%)  
+**Memory:** 13.4 MB (beats 77.90%)  
+**Submitted:** 2026-09-28T16:51:51.411Z  
 
 ```py
 class Solution(object):
     def findMaxConsecutiveOnes(self, nums):
-        current = 0
-        maxcounter = 0
+        maxcount = 0
+        currentcounter = 0
         for num in nums:
             if num ==1:
-                current +=1
-                maxcounter = max(current, maxcounter)     
+                currentcounter +=1
+                maxcount = max(maxcount,currentcounter)
             else:
-                current = 0
-        return maxcounter
+                currentcounter = 0
+        return maxcount
 
         """
         :type nums: List[int]
