@@ -35,9 +35,9 @@ Output: 2
 ## Solution
 
 **Language:** Python  
-**Runtime:** 36 ms (beats 36.08%)  
-**Memory:** 13.4 MB (beats 77.90%)  
-**Submitted:** 2026-09-28T16:51:51.411Z  
+**Runtime:** 32 ms (beats 45.16%)  
+**Memory:** 13.6 MB (beats 43.75%)  
+**Submitted:** 2026-09-28T16:52:10.139Z  
 
 ```py
 class Solution(object):
