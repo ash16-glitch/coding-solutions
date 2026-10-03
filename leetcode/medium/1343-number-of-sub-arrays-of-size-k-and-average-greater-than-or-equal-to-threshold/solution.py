@@ -10,6 +10,6 @@ class Solution(object):
                 l+=1 
             
             if r-l+1 == k:
-                if maxsum/k >= threshold:
+                if maxsum >= threshold*k:
                     counter+=1
         return counter 
