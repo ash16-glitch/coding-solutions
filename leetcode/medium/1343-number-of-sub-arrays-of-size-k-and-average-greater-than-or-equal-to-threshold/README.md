@@ -38,9 +38,9 @@ Explanation: The first 6 sub-arrays of size 3 have averages greater than 5. Note
 ## Solution
 
 **Language:** Python  
-**Runtime:** 71 ms (beats 16.84%)  
-**Memory:** 20 MB (beats 22.69%)  
-**Submitted:** 2026-10-03T20:59:49.699Z  
+**Runtime:** 60 ms (beats 27.00%)  
+**Memory:** 19.9 MB (beats 22.69%)  
+**Submitted:** 2026-10-03T21:02:45.107Z  
 
 ```py
 class Solution(object):
@@ -55,7 +55,7 @@ class Solution(object):
                 l+=1 
             
             if r-l+1 == k:
-                if maxsum/k >= threshold:
+                if maxsum >= threshold*k:
                     counter+=1
         return counter 
 ```
