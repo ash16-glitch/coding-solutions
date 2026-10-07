@@ -46,22 +46,23 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 ## Solution
 
 **Language:** Python  
-**Runtime:** 429 ms (beats 36.60%)  
-**Memory:** 16.9 MB (beats 13.52%)  
-**Submitted:** 2026-10-06T19:12:28.995Z  
+**Runtime:** 435 ms (beats 28.66%)  
+**Memory:** 16.7 MB (beats 57.47%)  
+**Submitted:** 2026-10-07T01:44:50.136Z  
 
 ```py
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
-        l ,maxcount = 0,0
+        l = 0
         window = set()
+        maxcounter = 0
         for r in range(len(s)):
             while s[r] in window:
                 window.remove(s[l])
                 l+=1
-            maxcount = max(maxcount,r-l+1)    
+            maxcounter = max(maxcounter,r-l+1)
             window.add(s[r])
-        return maxcount
+        return maxcounter
 
 ```
 
