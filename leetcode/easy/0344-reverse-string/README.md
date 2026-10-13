@@ -36,9 +36,9 @@ Output: ["h","a","n","n","a","H"]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 3 ms (beats 53.97%)  
-**Memory:** 19.8 MB (beats 77.18%)  
-**Submitted:** 2026-10-13T14:25:44.732Z  
+**Runtime:** 7 ms (beats 17.59%)  
+**Memory:** 19.8 MB (beats 44.05%)  
+**Submitted:** 2026-10-13T14:26:38.903Z  
 
 ```py
 class Solution(object):
