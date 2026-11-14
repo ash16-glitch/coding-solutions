@@ -39,24 +39,18 @@ Output: [0]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 4 ms (beats 34.40%)  
-**Memory:** 12.7 MB (beats 97.34%)  
-**Submitted:** 2026-11-14T07:26:32.890Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 12.7 MB (beats 92.90%)  
+**Submitted:** 2026-11-14T08:10:29.233Z  
 
 ```py
 class Solution(object):
     def sortArrayByParity(self, nums):
-        l = 0
-        r = len(nums)-1
-        while l<r:
-            if nums[l]%2==0:
-                l+=1
-            elif nums[r]%2!=0:
-                r-=1
-            else:
-                nums[l],nums[r] = nums[r], nums[l]
-                l+=1
-                r-=1
+        i = 0
+        for j in range(len(nums)):
+            if nums[j]%2==0:
+                nums[i], nums[j] =nums[j], nums[i]
+                i+=1
         return nums
 ```
 
