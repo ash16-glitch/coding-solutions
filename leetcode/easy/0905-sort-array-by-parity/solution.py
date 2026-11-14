@@ -1,14 +1,8 @@
 class Solution(object):
     def sortArrayByParity(self, nums):
-        l = 0
-        r = len(nums)-1
-        while l<r:
-            if nums[l]%2==0:
-                l+=1
-            elif nums[r]%2!=0:
-                r-=1
-            else:
-                nums[l],nums[r] = nums[r], nums[l]
-                l+=1
-                r-=1
+        i = 0
+        for j in range(len(nums)):
+            if nums[j]%2==0:
+                nums[i], nums[j] =nums[j], nums[i]
+                i+=1
         return nums
