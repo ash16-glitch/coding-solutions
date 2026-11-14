@@ -56,9 +56,9 @@ Thus, the result should be [1,0].
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 12.1 MB  
-**Submitted:** 2026-11-14T13:22:46.245Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 12 MB (beats 92.89%)  
+**Submitted:** 2026-11-14T13:22:53.553Z  
 
 ```py
 class Solution(object):
