@@ -1,10 +1,14 @@
 class Solution(object):
     def sortArrayByParity(self, nums):
-        result = []
-        for i in nums:
-            if i%2==0:
-                result.append(i)
-        for j in nums:
-            if j%2!=0:
-                result.append(j)
-        return result
+        l = 0
+        r = len(nums)-1
+        while l<r:
+            if nums[l]%2==0:
+                l+=1
+            elif nums[r]%2!=0:
+                r-=1
+            else:
+                nums[l],nums[r] = nums[r], nums[l]
+                l+=1
+                r-=1
+        return nums
