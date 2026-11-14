@@ -48,9 +48,9 @@ Output: false
 ## Solution
 
 **Language:** Python  
-**Runtime:** 74 ms (beats 48.29%)  
-**Memory:** 20.6 MB (beats 30.67%)  
-**Submitted:** 2026-11-13T19:35:06.283Z  
+**Runtime:** 78 ms (beats 32.79%)  
+**Memory:** 20.4 MB (beats 85.32%)  
+**Submitted:** 2026-11-14T05:11:17.957Z  
 
 ```py
 class Solution(object):
@@ -59,7 +59,7 @@ class Solution(object):
         dec = True
         for i in range(len(nums)-1):
             if nums[i]>nums[i+1]:
-                inc = False
+                inc= False
             if nums[i]<nums[i+1]:
                 dec = False
         return inc or dec
