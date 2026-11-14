@@ -5,4 +5,4 @@ class Solution(object):
             if digits[i]<10:
                 return digits
             digits[i] = 0 
-        return[i]+digits
+        return[1]+digits
