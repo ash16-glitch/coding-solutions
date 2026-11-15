@@ -51,9 +51,9 @@ Output: true
 ## Solution
 
 **Language:** Python  
-**Runtime:** 6 ms (beats 1.98%)  
-**Memory:** 12.1 MB (beats 94.90%)  
-**Submitted:** 2026-11-15T16:32:16.169Z  
+**Runtime:** 2 ms (beats 7.08%)  
+**Memory:** 12.3 MB (beats 73.37%)  
+**Submitted:** 2026-11-15T16:50:00.279Z  
 
 ```py
 class Solution(object):
