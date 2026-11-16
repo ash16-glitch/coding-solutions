@@ -58,9 +58,9 @@ Output: [true,false,true]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 12.3 MB (beats 63.14%)  
-**Submitted:** 2026-11-16T15:35:58.510Z  
+**Runtime:** 0 ms  
+**Memory:** 12.1 MB  
+**Submitted:** 2026-11-16T15:36:26.625Z  
 
 ```py
 class Solution(object):
