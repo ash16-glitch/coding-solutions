@@ -58,9 +58,9 @@ Output: [true,false,true]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 1 ms (beats 34.99%)  
-**Memory:** 12.2 MB (beats 79.95%)  
-**Submitted:** 2026-11-16T15:34:13.942Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 12.3 MB (beats 63.14%)  
+**Submitted:** 2026-11-16T15:35:58.510Z  
 
 ```py
 class Solution(object):
@@ -77,6 +77,7 @@ class Solution(object):
                 result.append(True)
             else:
                 result.append(False)
+        
         return result
 
 ```
