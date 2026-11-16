@@ -17,7 +17,8 @@ Python
  **Example 1:** 
 
 ```
-Input:candies = [2, 3, 5, 1, 3]extraCandies = 3Output: [true,true,true,false,true] 
+Input: candies = [2,3,5,1,3], extraCandies = 3
+Output: [true,true,true,false,true] 
 Explanation: If you give all extraCandies to:
 - Kid 1, they will have 2 + 3 = 5 candies, which is the greatest among the kids.
 - Kid 2, they will have 3 + 3 = 6 candies, which is the greatest among the kids.
@@ -30,7 +31,8 @@ Explanation: If you give all extraCandies to:
  **Example 2:** 
 
 ```
-Input:candies = [4, 2, 1, 1, 2]extraCandies = 1Output: [true,false,false,false,false] 
+Input: candies = [4,2,1,1,2], extraCandies = 1
+Output: [true,false,false,false,false] 
 Explanation: There is only 1 extra candy.
 Kid 1 will always have the greatest number of candies, even if a different kid is given the extra candy.
 
@@ -39,7 +41,8 @@ Kid 1 will always have the greatest number of candies, even if a different kid i
  **Example 3:** 
 
 ```
-Input:candies = [12, 1, 12]extraCandies = 10Output: [true,false,true]
+Input: candies = [12,1,12], extraCandies = 10
+Output: [true,false,true]
 
 ```
 
@@ -55,9 +58,9 @@ Input:candies = [12, 1, 12]extraCandies = 10Output: [true,false,true]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 12.1 MB (beats 92.97%)  
-**Submitted:** 2026-11-11T19:21:47.258Z  
+**Runtime:** 1 ms (beats 34.99%)  
+**Memory:** 12.2 MB (beats 79.95%)  
+**Submitted:** 2026-11-16T15:34:13.942Z  
 
 ```py
 class Solution(object):
@@ -70,11 +73,12 @@ class Solution(object):
         result = []
         maximum = max(candies)
         for i in candies:
-            if i+extraCandies>= maximum:
+            if extraCandies+i>= maximum:
                 result.append(True)
             else:
                 result.append(False)
         return result
+
 ```
 
 ---
