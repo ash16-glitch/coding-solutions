@@ -12,4 +12,5 @@ class Solution(object):
                 result.append(True)
             else:
                 result.append(False)
+        
         return result
