@@ -8,7 +8,7 @@ class Solution(object):
         result = []
         maximum = max(candies)
         for i in candies:
-            if i+extraCandies>= maximum:
+            if extraCandies+i>= maximum:
                 result.append(True)
             else:
                 result.append(False)
