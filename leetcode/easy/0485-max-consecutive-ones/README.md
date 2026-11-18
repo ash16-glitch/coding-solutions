@@ -8,6 +8,8 @@ Given a binary array `nums`, return  *the maximum number of consecutive* `1` *'s
 
  
 
+Original
+Python
  **Example 1:** 
 
 ```
@@ -35,22 +37,23 @@ Output: 2
 ## Solution
 
 **Language:** Python  
-**Runtime:** 32 ms (beats 45.16%)  
-**Memory:** 13.6 MB (beats 43.75%)  
-**Submitted:** 2026-09-28T16:52:10.139Z  
+**Runtime:** 14 ms (beats 90.65%)  
+**Memory:** 13.2 MB (beats 96.28%)  
+**Submitted:** 2026-11-18T17:57:51.651Z  
 
 ```py
 class Solution(object):
     def findMaxConsecutiveOnes(self, nums):
-        maxcount = 0
-        currentcounter = 0
+        counter = 0
+        maxcounter = 0
         for num in nums:
-            if num ==1:
-                currentcounter +=1
-                maxcount = max(maxcount,currentcounter)
+            if num == 1:
+                counter+=1
             else:
-                currentcounter = 0
-        return maxcount
+                maxcounter = max(maxcounter,counter)
+                counter = 0
+        return max(maxcounter,counter)
+
 
         """
         :type nums: List[int]
