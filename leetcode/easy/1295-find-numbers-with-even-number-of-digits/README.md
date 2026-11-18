@@ -45,22 +45,22 @@ Only 1771 contains an even number of digits.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 4 ms (beats 28.51%)  
-**Memory:** 12.1 MB (beats 84.84%)  
-**Submitted:** 2026-11-12T18:13:54.213Z  
+**Runtime:** 4 ms (beats 27.91%)  
+**Memory:** 12.2 MB (beats 80.64%)  
+**Submitted:** 2026-11-18T16:43:55.032Z  
 
 ```py
 class Solution(object):
     def findNumbers(self, nums):
-        counter = 0
+        count = 0
         for i in nums:
-            digit_count = 0
+            digit = 0
             while i>0:
                 i//=10
-                digit_count+=1
-            if digit_count%2==0:
-                counter+=1
-        return counter
+                digit+=1
+            if digit%2==0:
+                count+=1
+        return count
 ```
 
 ---
